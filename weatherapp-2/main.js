@@ -1,5 +1,5 @@
 import "./style.css";
-import API from "./config";
+// import API from "./config";
 
 const currentTemp = document.querySelector("#currentTemp");
 const inputField = document.querySelector("#input-location");
@@ -16,3 +16,8 @@ const daysOfTheWeek = [
 	"Saturday",
 	"Sunday",
 ];
+
+const getGeoData = async () => {
+	const url = "https://api.weatherapi.com/v1/current.json?q=london";
+	console(url);
+};
