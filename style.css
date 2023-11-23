@@ -115,6 +115,14 @@ section {
 	border: none;
 }
 
+.fetch-btn svg {
+	fill: white; 
+	width: 15px; 
+	height: 15px; 
+
+	
+}
+
 
 #extra-weather {
 	margin-top: 35px;
