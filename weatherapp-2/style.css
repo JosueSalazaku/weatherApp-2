@@ -53,7 +53,7 @@ section {
 }
 
 #country {
-	font-size: 30px;
+	font-size: 20px;
 	margin-top: 25px;
 	font-weight: 700;
 	margin-left: 15px;
@@ -157,16 +157,3 @@ p {
 	gap: 20px;
 }
 
-.weather-svg  {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-img {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}

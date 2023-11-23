@@ -3,10 +3,10 @@ import API from "./config";
 import startWeatherApp from "./app";
 
 export const currentTemp = document.querySelector("#currentTemp");
-const inputField = document.querySelector("#input-location");
+export const inputField = document.querySelector("#input-location");
 export const country = document.querySelector("#country");
-const fetchBtn = document.querySelector(".fetch-btn");
-const forecast = document.querySelector("#forecast");
+export const fetchBtn = document.querySelector(".fetch-btn");
+export const forecast = document.querySelector("#forecast");
 
 const daysOfTheWeek = [
 	"Monday",

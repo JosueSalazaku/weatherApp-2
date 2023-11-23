@@ -1,5 +1,6 @@
 import getWeatherData from "./api";
 import { country } from "./main";
+import { currentTemp } from "./main"
 const inputField = document.querySelector("#input-location");
 
 
@@ -12,13 +13,15 @@ const startWeatherApp = async () => {
 
 		if (getData.location) {
 			const { lat, lon } = getData.location;
-			console.log("City:", getData.name);
-			console.log("Country:", getData.country);
 			const city = getData.location.name
 			const Country = getData.location.country
+			console.log("City:", city);
+			console.log("Country:", Country);
 
 			// Update city and country in the HTML
 			country.innerHTML = `${city}, ${Country}`;
+			currentTemp.innerHTML = `Temp: ${getData.current.temp_c} °C <br> ${getData.current.condition.text}`
+
 		}
 	} catch (error) {
 		alert("Something is wrong, check error message");
