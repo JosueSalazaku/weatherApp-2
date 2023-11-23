@@ -44,8 +44,9 @@ body {
 .nav {
 	margin-top: 20px;
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 section {

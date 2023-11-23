@@ -7,14 +7,13 @@ import { inputField } from "./main";
 import forecastDisplay from "./display";
 
 
-
 const startWeatherApp = async () => {
 	const cityName = inputField.value;
 	try {
 		const country = document.querySelector("#country");
 		const getData = await getWeatherData(cityName);
 		console.log("get all the data", getData);
-		console.log(forecastDisplay)
+
 
 		if (getData.location) {
 			const { lat, lon } = getData.location;
@@ -35,10 +34,6 @@ const startWeatherApp = async () => {
 			weatherImg.innerHTML = ""
 			weatherImg.appendChild(iconImg);
 			forecastDisplay
-
-
-
-
 
 		}
 	} catch (error) {
