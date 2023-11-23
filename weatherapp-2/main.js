@@ -7,6 +7,7 @@ export const inputField = document.querySelector("#input-location");
 export const country = document.querySelector("#country");
 export const fetchBtn = document.querySelector(".fetch-btn");
 export const forecast = document.querySelector("#forecast");
+export const weatherImg = document.querySelector("#weather-imgs")
 
 const daysOfTheWeek = [
 	"Monday",
