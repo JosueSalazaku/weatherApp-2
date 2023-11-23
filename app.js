@@ -1,5 +1,5 @@
 import { getWeatherData } from "./api"
-import { country } from "./main";
+import { country, forecastCards } from "./main";
 import { currentTemp } from "./main"
 import { weatherImg } from "./main";
 import { condition } from "./main";

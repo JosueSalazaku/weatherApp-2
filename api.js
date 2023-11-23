@@ -2,7 +2,7 @@ import API from "./config";
 
 const getWeatherData = async (cityName) => {
 	const url =
-		"http://api.weatherapi.com/v1/current.json?key=" +
+		"http://api.weatherapi.com/v1/forecast.json?key=" +
 		API.key +
 		"&q=" +
 		cityName +

@@ -115,12 +115,14 @@ section {
 	border: none;
 }
 
+#location-section .fetch-btn:hover {
+	background: #3745c2;
+}
+
 .fetch-btn svg {
 	fill: white; 
 	width: 15px; 
 	height: 15px; 
-
-	
 }
 
 
