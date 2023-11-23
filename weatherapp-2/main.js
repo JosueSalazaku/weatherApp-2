@@ -20,7 +20,7 @@ const options = {
 	hour: 'numeric',
 	minute: 'numeric',
 	second: 'numeric',
-	hour12: true,
+	hour12: false,
 };
 
 
