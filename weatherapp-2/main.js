@@ -2,10 +2,10 @@ import "./style.css";
 import API from "./config";
 import startWeatherApp from "./app";
 
-const currentTemp = document.querySelector("#currentTemp");
+export const currentTemp = document.querySelector("#currentTemp");
 const inputField = document.querySelector("#input-location");
-const country = document.querySelector("#country");
-const fetchBtn = document.querySelector("#fetch-btn");
+export const country = document.querySelector("#country");
+const fetchBtn = document.querySelector(".fetch-btn");
 const forecast = document.querySelector("#forecast");
 
 const daysOfTheWeek = [
@@ -23,3 +23,5 @@ inputField.addEventListener("keyup", function (event) {
 		startWeatherApp();
 	}
 });
+
+fetchBtn.addEventListener("click", startWeatherApp);
