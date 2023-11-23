@@ -53,7 +53,7 @@ section {
 }
 
 #country {
-	font-size: 20px;
+	font-size: 30px;
 	margin-top: 25px;
 	font-weight: 700;
 	margin-left: 15px;
@@ -68,9 +68,15 @@ section {
 	text-align: center;
 	margin-left: 15px;
 	margin-right: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	gap: 10px;
 	opacity: 2;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+#condition {
+	margin-bottom: 20px;
 }
 
 #input-location {

@@ -1,8 +1,11 @@
-import getWeatherData from "./api";
+import { getWeatherData } from "./api"
 import { country } from "./main";
 import { currentTemp } from "./main"
 import { weatherImg } from "./main";
-const inputField = document.querySelector("#input-location");
+import { condition } from "./main";
+import { inputField } from "./main";
+import forecastDisplay from "./display";
+
 
 
 const startWeatherApp = async () => {
@@ -11,6 +14,7 @@ const startWeatherApp = async () => {
 		const country = document.querySelector("#country");
 		const getData = await getWeatherData(cityName);
 		console.log("get all the data", getData);
+		console.log(forecastDisplay)
 
 		if (getData.location) {
 			const { lat, lon } = getData.location;
@@ -19,12 +23,10 @@ const startWeatherApp = async () => {
 			const temperature = getData.current.temp_c;
 			const tempText = getData.current.condition.text;
 			const iconUrl = getData.current.condition.icon;
-			console.log("City:", city);
-			console.log("Country:", Country);
 
-			// Update city and country in the HTML
 			country.innerHTML = `${city}, ${Country}`;
-			currentTemp.innerHTML = `Temp: ${temperature} °C <br> ${tempText}`
+			currentTemp.innerHTML = `${temperature} °C`
+			condition.innerHTML = `${tempText}`
 
 			const iconImg = document.createElement("img");
 			iconImg.src = `http:${iconUrl}`;
@@ -32,6 +34,9 @@ const startWeatherApp = async () => {
 
 			weatherImg.innerHTML = ""
 			weatherImg.appendChild(iconImg);
+			forecastDisplay
+
+
 
 
 
