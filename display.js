@@ -1,8 +1,6 @@
 import startWeatherApp from "./app";
-import { daysOfTheWeek } from "./main";
-import { forecastCards } from "./main";
+import { daysOfTheWeek, forecastCards, timeAndDate } from "./main";
 import { getWeatherData } from "./api";
-import { timeAndDate } from "./main";
 import { country, currentTemp, weatherImg, condition, inputField, nav } from "./main";
 
 
