@@ -57,7 +57,7 @@ const getWeatherData = async () => {
 
 
 const forecastDisplay = async (is_day, cityName) => {
-	console.log(API)
+	console.log(API);
 
 	try {
 		const getData = await getWeatherData(cityName);
@@ -68,13 +68,13 @@ const forecastDisplay = async (is_day, cityName) => {
 			cards.classList.add("cards");
 
 			const dayData = forecastData[i];
-			const day = dayData.date
+			const dayOfWeek = daysOfTheWeek[i];
+			const iconUrl = dayData.day.condition.icon;
 			const temperature = dayData.day.avgtemp_c;
 			const tempText = dayData.day.condition.text;
-			const iconUrl = dayData.day.condition.icon;
 
 			const dayElement = document.createElement("p");
-			dayElement.textContent = day;
+			dayElement.textContent = dayOfWeek;
 
 			const temperatureElement = document.createElement("p");
 			temperatureElement.textContent = `${temperature} °C`;
@@ -87,18 +87,19 @@ const forecastDisplay = async (is_day, cityName) => {
 			iconImg.alt = "Weather Icon";
 
 			cards.appendChild(dayElement);
+			cards.appendChild(iconImg);
 			cards.appendChild(temperatureElement);
 			cards.appendChild(conditionElement);
-			cards.appendChild(iconImg);
 
 			forecastCards.appendChild(cards);
-
 		}
 	} catch (error) {
-		console.error("not working or getting data")
+		console.error("Error fetching or displaying data", error);
 	}
+};
 
-}
+
+
 const startWeatherApp = async () => {
 	const cityName = inputField.value;
 	try {

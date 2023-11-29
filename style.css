@@ -154,6 +154,23 @@ section {
 	backdrop-filter: blur(21px);
 }
 
+.cards {
+	margin-top: 35px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	border: 2px solid #b9c0ff;
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	border-radius: 20px;
+}
+
+
 p {
 	margin: 20px;
 	margin-top: 15px;
@@ -163,5 +180,216 @@ p {
 	padding-left: 35px;
 	padding-right: 35px;
 	gap: 20px;
+} 
+
+@media screen and (min-width: 601px) and (max-width: 1500px) {
+	
+
+	
+	#card {
+		margin-top: 35px;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		border: 2px solid #b9c0ff;
+		width: 80vw;
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
+		border-radius: 20px;
+		/* flex-wrap: wrap; */
+	}
+	
+	.nav {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+	
+	section {
+		font-size: 20px;
+	}
+	
+	#country {
+		font-size: 30px;
+		margin-top: 25px;
+		font-weight: 700;
+		margin-left: 15px;
+		margin-right: 15px;
+		text-align: center;
+	}
+	
+	#currentTemp {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 10px;
+		gap: 10px;
+		opacity: 2;
+		font-size: 30px;
+		font-weight: 600;
+	}
+	
+	#condition {
+		margin-bottom: 20px;
+	}
+	
+	#location-section {
+		width: 300px;
+		height: 100%;
+		max-width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+	}
+	
+	#location-section #input-location {	
+		border-radius: 50%;
+		width: 100%;
+		height: 20px;
+		border-radius: 20px;
+		border: #b9c0ff 2px  solid;
+		background: white;
+		color: #3745c2;
+		padding: 1rem 15px;
+		font-size: medium;
+	}
+	
+	#location-section .fetch-btn {
+		aspect-ratio: 1;
+		position: absolute;
+		right: 0;
+		background: #b9c0ff;
+		width: 35px;
+		border-radius: 50%;
+		border: none;
+	}
+	
+	#location-section .fetch-btn:hover {
+		background: #3745c2;
+	}
+	
+	.fetch-btn svg {
+		fill: white; 
+		width: 15px; 
+		height: 15px; 
+	}
+	
+	
+	#extra-weather {
+		margin-top: 35px;
+		margin-left: 20px;
+		margin-right: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	
+	#forecast div {
+		color: white;
+		font-weight: 400;
+		/* width: 100%; */
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding: 20px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-radius: 35px;
+		border: solid 1px rgba(255, 255, 255, 0.2);
+		background: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(21px);
+	}
+
+	#extra-weather {
+		display: flex;
+		flex-direction: row;
+	}
+
+#forecast-Cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+	
+	.cards {
+		margin-top: 35px;
+		color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		border: 2px solid #b9c0ff;
+		width: 80vw;
+		height: auto;
+		border-radius: 20px;
+	}
+	
+	
+	p {
+		margin: 20px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 35px;
+		margin-right: 35px;
+		padding-left: 35px;
+		padding-right: 35px;
+		gap: 20px;
+	} 
+}
+
+@media screen and (min-width: 901px) {
+
+	section #forecast-Cards {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 100vw;
+		height: 100%;
+	}
+	.cards {
+		margin-top: 35px;
+		color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1px;
+		border: 2px solid #b9c0ff;
+		width: 550px;
+		height: 250px;
+		border-radius: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.cards p {
+		margin: 20px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 35px;
+		margin-right: 35px;
+		padding-left: 35px;
+		padding-right: 35px;
+		gap: 20px;
+	} 
 }
 
