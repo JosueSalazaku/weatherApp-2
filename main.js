@@ -57,7 +57,7 @@ const getWeatherData = async () => {
 
 
 const forecastDisplay = async (is_day, cityName) => {
-	console.log(API);
+
 
 	try {
 		const getData = await getWeatherData(cityName);
